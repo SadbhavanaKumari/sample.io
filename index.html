@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="fontaw.css">
+    <script src="script.js"></script>
+    <script type="text/script" src="main.js"></script>
+    <title>HOME</title>
+</head>
+<body>
+    <!-- HEADER SECTION OPEN -->
+    <header>
+        <a href="#" class="logo"><i class="fas fa-infinity"></i>Zybisys Anime.</a>
+        <nav class="navbar">
+            <a href="#" class="active">HOME</a>
+            <a href="#anime" >ANIME</a>
+            <a href="#action" >ACTION</a>
+            <a href="#" >COMEDY</a>
+            <a href="#" >DRAMA</a>
+        </nav>
+        <div class="icons">
+            <i class="fa fa-bars" id="bars"></i>
+            <a href="#edit_search"><i class="fa fa-search" id="search-icon"></i></a>
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
+    <!-- HOME SECTION START -->
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="box" style="background-image:url(s1.png); ">
+              <div class="content">
+                <h3>Cowboy Bebop</h3>
+                <p>Crime is timeless. By the year 2071, humanity has expanded across the galaxy, 
+                  filling the surface of other planets with settlements like those on Earth.
+                </p>
+                <a href="#" class="btn">See More</a>
+                
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="box second" style="background-image:url(s4.jpg); ">
+              <div class="content">
+                <h3>Trigun</h3>
+                <p>Vash the Stampede is the man with a $$60,000,000,000 bounty on his head. 
+                  The reason: he's a merciless villain who lays waste to all those that oppose 
+                  him and flattens entire cities for fun, garnering him the title \"The Humanoid Typhoon.\"
+                </p>
+                <a href="#" class="btn">See More</a>
+                
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="box" style="background-image:url(s3.png); ">
+              <div class="content">
+                <h3>Witch Hunter Robin</h3>
+                <p>Witches are individuals with special powers like ESP, telekinesis, mind control, etc. Robin, a 15-year-old craft user,
+                   arrives from Italy to Japan to work for an organization named STN Japan Division (STN-J) as a replacement for one
+                    of STN-J's witch hunters who was recently killed.
+                </p>
+                <a href="#" class="btn">See More</a>
+                
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+
+
+
+
+        </div>
+      </div>
+    </section>
+    <!-- anime section start -->
+    <section class="anime" id="anime">
+      <h1 class="heading"><b>Anime</b></h1><hr style="color: red;border:1px solid red;">
+      <div>
+             
+      <input type="text" placeholder="Search or Filter" id="edit_search" onkeyup="javascript: find_my_div();" style="font-size: 1.5rem;border-radius: 5px; width: 75%;" class="search p-3">
+      <span><a href="#" style="background-color: red; text-decoration: none;color:#fff; font-size: 1.5rem;border-radius: 5px;" class="p-3">Search</a></span>
+</div><br><br>
+
+      <div class="anime-slider">
+        <div class="wrapper">
+          <div class="row">
+            <div class="col">
+          <div class="row">
+
+          <div class="slide col p-3" id="user_1" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/4/19644.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Cowboy Bebop</h3>
+                <h5><b style="color:red ;">Rating:</b> R - 17+ (violence & profanity)</h5>
+                <p hidden>action</p>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <button class="btn" onclick="watchLater(1);">Watch Later</button>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_2" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/7/20310.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Trigun</h3>
+                <h5><b style="color:red ;">Rating:</b> PG-13 - Teens 13 or older</h5>
+                <p hidden>action</p>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_3" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/10/19969.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Witch Hunter Robin</h3>
+                <h5><b style="color:red ;">Rating:</b> PG-13 - Teens 13 or older</h5>
+                <p hidden>action</p>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_4" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/7/21569.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Bouken Ou Beet</h3>
+                <h5><b style="color:red ;">Rating:</b> PG - Children</h5>
+                <p hidden>action</p>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_5" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/12/66961.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Eyeshield 21</h3>
+                <p hidden>adventure</p>
+                <h5><b style="color:red ;">Rating:</b> PG-13 - Teens 13 or older</h5>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_6" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/11/73923.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Hachimitsu to Clover</h3>
+                <p hidden>sports</p>
+                <h5><b style="color:red ;">Rating:</b> PG-13 - Teens 13 or older</h5>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_7" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/12/49655.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Hungry Heart: Wild Striker</h3>
+                <p hidden>comedy</p>
+                <h5><b style="color:red ;">Rating:</b> PG-13 - Teens 13 or older</h5>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_8" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/9/10521.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Initial D Fourth Stage</h3>
+                <p hidden>comedy</p>
+                <h5><b style="color:red ;">Rating:</b> PG-13 - Teens 13 or older</h5>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_9" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/10/18793.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Monster</h3>
+                <h5><b style="color:red ;">Rating:</b> R+ - Mild Nudity</h5>
+                <p hidden>action</p>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_10" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/13/17405.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Naruto</h3>
+                <p hidden>Drama</p>
+                <h5><b style="color:red ;">Rating:</b> PG-13 - Teens 13 or older</h5>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_11" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/6/73245.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >One Piece</h3>
+                <h5><b style="color:red ;">Rating:</b> PG-13 - Teens 13 or older</h5>
+                <p hidden>action</p>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_12" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/6/21624.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Tennis no Ouji-sama</h3>
+                <p hidden>action</p>
+                <h5><b style="color:red ;">Rating:</b> PG-13 - Teens 13 or older</h5>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_13" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/1146/124743.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Ring ni Kakero 1</h3>
+                <h5><b style="color:red ;">Rating:</b> PG - Children</h5>
+                <p hidden>sports</p>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_14" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/4/75488.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >School Rumble</h3>
+                <h5><b style="color:red ;">Rating:</b> PG-13 - Teens 13 or older</h5>
+                <p hidden>action</p>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_15" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/6/75536.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Sunabouzu</h3>
+                <h5><b style="color:red ;">Rating:</b> R - 17+ (violence & profanity)</h5>
+                <p hidden>comedy</p>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_16" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/3/18165.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Texhnolyze</h3>
+                <h5><b style="color:red ;">Rating:</b> R+ - Mild Nudity</h5>
+                <p hidden>action</p>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_17" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/10/24649.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Trinity Blood</h3>
+                <h5><b style="color:red ;">Rating:</b> R - 17+ (violence & profanity)</h5>
+                <p hidden>action</p>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_18" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/3/76432.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Yakitate!! Japan</h3>
+                <h5><b style="color:red ;">Rating:</b> PG-13 - Teens 13 or older</h5>
+                <p hidden>action</p>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_19" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/13/75740.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Zipang</h3>
+                <h5><b style="color:red ;">Rating:</b> PG-13 - Teens 13 or older</h5>
+                <p hidden>comedy</p>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_20" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/1314/108941.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Neon Genesis Evangelion</h3>
+                <h5><b style="color:red ;">Rating:</b> PG-13 - Teens 13 or older</h5>
+                <p hidden>action</p>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_21" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/1993/113122.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Neon Genesis Evangelion: Death & Rebirth</h3>
+                <h5><b style="color:red ;">Rating:</b> R - 17+ (violence & profanity)</h5>
+                <p hidden id="action">action</p>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_22" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/1404/98182.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Neon Genesis Evangelion: The End of Evangelion</h3>
+                <h5><b style="color:red ;">Rating:</b> R+ - Mild Nudity</h5>
+                <p hidden>drama</p>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_23" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/1384/119988.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Kenpuu Denki Berserk</h3>
+                <h5><b style="color:red ;">Rating:</b> R+ - Mild Nudity</h5>
+                <p hidden>avant grade</p>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          <div class="slide col p-3" id="user_24" draggable="true" ondragstart="user(event)">
+            <div class="box" style="background:url(https://cdn.myanimelist.net/images/anime/10/82594.jpg) ;background-repeat: no-repeat;background-size: cover;"></div>
+              <div class="content">
+                <h3 id="title" >Koukaku Kidoutai</h3>
+                <h5><b style="color:red ;">Rating:</b> R+ - Mild Nudity</h5>
+                <p hidden id="action">action</p>
+                <a href="#" class="btn">See More</a>  &nbsp;&nbsp;&nbsp;  <a href="#" class="btn">Watch Later</a>
+              </div>
+          </div>
+
+          
+        </div>
+      </div>
+      <div class="col-md-3" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"  style="border: 1px solid #fff;">
+        <h1 style="color: red;" class="p-3"><i class="fa fa-clock-o "> </i> Watch Later</h1><hr style="border: 1px solid #fff;">
+        
+      </div>
+      </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer" style="background-color: #000000;">
+      <div class="row">
+        <div class="col-md-3">
+          <a href="#" class="logo" style="color: #fff;text-decoration: none;font-size: 2.5rem;"><i style="color: #E50914;" class="fas fa-infinity"></i> Zybisys Anime.</a>
+
+        </div>
+        <div class="col" style="text-align: right;">
+            <p style="color: #fff;font-size:1.5rem;">All right reserved by <a href="#">Zybisys Limited</a> &copy; 2022</p>
+        </div>
+      </div>
+    </section>
+
+</body>
+
+<script>
+    let menu=document.querySelector("#bars");
+let navbar=document.querySelector(".navbar");
+menu.onclick = () => {
+    menu.classList.toggle('fa-time');
+    navbar.classList.toggle('actives');
+}
+var swiper=new Swiper(".home-slider",{
+  spaceBetween:30,
+  centeredSliders:true,
+  autoplay:{
+    delay:7500,
+    disableOnInteraction:false,
+  },
+  pagination:{
+    el:".swiper-pagination",
+    clickable:true,
+  },
+  navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+  loop:true,
+});
+ function searchFunction(){
+  var input,filter,div,title,i,txtValue;
+  input = document.getElementById("myInput");
+  filter=input.value.toUpperCase();
+  div = document.getElementById("anime");
+  title=table.getElementByTagName("tr");
+  for(i=0;i<tr.length;i++){
+    td = getElementByTagName("title");
+    if(td){
+      txtValue = td.textContent || td.innerText;
+      if(txtValue.toUpperCase().indexOf(filter)>-1){
+        tr[i].style.display = "";
+      }
+      else{
+        tr[i].style.display = "none";
+      }
+
+    }
+  }
+
+}
+function gid(a_id) {
+	return document.getElementById (a_id)	;
+}
+
+  function close_all(){
+  
+  	for (i=0;i<999; i++) {
+  		var o = gid("user_"+i);
+  		if (o) {
+  			o.style.display = "none";
+  		}
+  	}
+  
+  }
+
+
+  function find_my_div(){ 
+  	close_all(); 
+  	
+	var o_edit = gid("edit_search");
+	var str_needle = edit_search.value;
+	str_needle = str_needle.toUpperCase();
+  
+	if (str_needle != "") {
+		for (i=0;i<999; i++) {
+	  	var o = gid("user_"+i);
+	  	if (o) { 
+	  		
+	  		var str_haystack = o.innerHTML.toUpperCase();
+	  		if (str_haystack.indexOf(str_needle) ==-1) {
+	  			// not found, do nothing
+	  		}
+	  		else{
+	  			o.style.display = "block";
+		  		}	
+  			}
+  		}
+  	}
+  
+  }
+  function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function user(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+var data;
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+function saveText(data) {
+if (localStorage.setItem(data)) {
+    var key = "latest text annotated" ;
+    var annotatedtext = document.getElementById("div1");
+    var annotatextTextStringified = JSON.stringify(annotatedtext);
+    localStorage.setItem(key, annotatextTextStringified);
+  }
+else {
+    console.log("Error: you don't have localStorage!");
+  }
+}
+
+</script>
+</html>
